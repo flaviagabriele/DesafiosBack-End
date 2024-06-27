@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cores Randon</title>
+    <style>
+        body{font-size: 12pt arial;}
+    </style>
+</head>
+<body>
+    <h1>Como deixar o background com Cores dinamicas</h1>
+    <p></p>
+   
+
+    <script>
+        let listadecores = ['Green', 'Blue', 'White', 'Orange', 'Gray', 'Red', 'pink','Yellow','Purple'];
+        function trocarcores(){
+            document.body.style.background=listadecores[Math.floor(9*Math.random())];
+        }
+        setInterval(trocarcores,1000)
+        
+    </script>
+</body>
+</html>
